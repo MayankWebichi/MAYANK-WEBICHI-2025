@@ -1,0 +1,1779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayank Webichi - Premium Web Developer for Event & Decor Businesses | UP, Rajasthan, India</title>
+    <meta name="description" content="Professional web developer specializing in stunning websites for event management and home decor businesses across Uttar Pradesh, Rajasthan and all India. Affordable, fast websites with premium quality.">
+    <meta name="keywords" content="web developer UP, event management website, home decor website, affordable website developer, Rajasthan web designer, India web development">
+    <meta name="author" content="Mayank Webichi">
+    <meta name="geo.region" content="IN-UP">
+    <meta name="geo.placename" content="Uttar Pradesh">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Mayank Webichi - Premium Web Developer for Event & Decor Businesses">
+    <meta property="og:description" content="Professional web developer specializing in stunning websites for event management and home decor businesses across India.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mayankwebich.xyz">
+    <meta property="og:image" content="https://mayankwebich.xyz/images/social-preview.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://mayankwebich.xyz">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Preload Fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700&display=swap">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6e48aa',
+                        secondary: '#9d50bb',
+                        accent: '#ff9a44',
+                        dark: '#1a1a2e',
+                        light: '#f8f9fa',
+                        animePink: '#ff2d6d',
+                        animeBlue: '#00f0ff',
+                        animePurple: '#b399ff'
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                        montserrat: ['Montserrat', 'sans-serif']
+                    },
+                    animation: {
+                        'float': 'float 3s ease-in-out infinite',
+                        'pulse': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'bounce-slow': 'bounce 2s infinite',
+                        'text-gradient': 'text-gradient 6s linear infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                        'wave': 'wave 1.5s linear infinite',
+                        'fade-in': 'fadeIn 0.5s ease-out forwards',
+                        'slide-up': 'slideUp 0.8s ease-out forwards',
+                        'slide-right': 'slideRight 0.8s ease-out forwards',
+                        'rotate': 'rotate 20s linear infinite',
+                        'parallax': 'parallax 20s ease infinite'
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-20px)' }
+                        },
+                        'text-gradient': {
+                            '0%, 100%': { 'background-position': '0% 50%' },
+                            '50%': { 'background-position': '100% 50%' }
+                        },
+                        glow: {
+                            'from': { 'box-shadow': '0 0 5px -5px #ff2d6d' },
+                            'to': { 'box-shadow': '0 0 20px 5px #ff2d6d' }
+                        },
+                        wave: {
+                            '0%': { transform: 'rotate(0deg)' },
+                            '10%': { transform: 'rotate(14deg)' },
+                            '20%': { transform: 'rotate(-8deg)' },
+                            '30%': { transform: 'rotate(14deg)' },
+                            '40%': { transform: 'rotate(-4deg)' },
+                            '50%': { transform: 'rotate(10deg)' },
+                            '60%': { transform: 'rotate(0deg)' },
+                            '100%': { transform: 'rotate(0deg)' }
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' }
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(100px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        },
+                        slideRight: {
+                            '0%': { transform: 'translateX(-100px)', opacity: '0' },
+                            '100%': { transform: 'translateX(0)', opacity: '1' }
+                        },
+                        rotate: {
+                            '0%': { transform: 'rotate(0deg)' },
+                            '100%': { transform: 'rotate(360deg)' }
+                        },
+                        parallax: {
+                            '0%': { transform: 'translateY(0)' },
+                            '100%': { transform: 'translateY(-200px)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Three.js for 3D objects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <style>
+        :root {
+            --primary: #6e48aa;
+            --secondary: #9d50bb;
+            --accent: #ff9a44;
+            --anime-pink: #ff2d6d;
+            --anime-blue: #00f0ff;
+            --anime-purple: #b399ff;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+            background-color: var(--light);
+            color: var(--dark);
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+        }
+        
+        .anime-gradient-bg {
+            background: linear-gradient(45deg, var(--anime-pink), var(--anime-purple), var(--anime-blue));
+            background-size: 300% 300%;
+            animation: text-gradient 6s ease infinite;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .anime-gradient-text {
+            background: linear-gradient(90deg, var(--anime-pink), var(--anime-purple), var(--anime-blue));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            background-size: 300% 300%;
+            animation: text-gradient 6s ease infinite;
+        }
+        
+        .offer-badge {
+            animation: pulse 2s infinite;
+        }
+        
+        .portfolio-item {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .portfolio-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(110, 72, 170, 0.8), rgba(157, 80, 187, 0.8));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 1;
+        }
+        
+        .portfolio-item:hover::before {
+            opacity: 1;
+        }
+        
+        .portfolio-item:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        .portfolio-item img {
+            transition: transform 0.5s ease;
+        }
+        
+        .portfolio-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .floating-btn {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--accent);
+            transition: width 0.3s ease;
+            border-radius: 3px;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .mobile-menu {
+            transform: translateX(100%);
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .mobile-menu.open {
+            transform: translateX(0);
+        }
+        
+        .service-card {
+            perspective: 1000px;
+            transform-style: preserve-3d;
+        }
+        
+        .service-card-inner {
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .service-card:hover .service-card-inner {
+            transform: rotateY(180deg);
+        }
+        
+        .service-card-front, .service-card-back {
+            backface-visibility: hidden;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border-radius: 1rem;
+            overflow: hidden;
+        }
+        
+        .service-card-back {
+            transform: rotateY(180deg);
+        }
+        
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        @media (max-width: 768px) {
+            .parallax {
+                background-attachment: scroll;
+            }
+        }
+        
+        .progress-bar {
+            height: 4px;
+            width: 0;
+            background: var(--accent);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            transition: width 0.1s;
+        }
+        
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce-slow 2s infinite;
+        }
+        
+        .scroll-indicator::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 6px;
+            height: 6px;
+            margin-left: -3px;
+            background-color: #fff;
+            border-radius: 100%;
+            animation: scroll-indicator 2s infinite;
+        }
+        
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .anime-character {
+            position: relative;
+        }
+        
+        .anime-character::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--anime-pink);
+            border-radius: 100%;
+            filter: blur(5px);
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .contact-input {
+            transition: all 0.3s ease;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-input:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(255, 154, 68, 0.3);
+        }
+        
+        .wave-hand {
+            animation-name: wave;
+            animation-duration: 2.5s;
+            animation-iteration-count: infinite;
+            transform-origin: 70% 70%;
+            display: inline-block;
+        }
+        
+        .seo-section {
+            background: linear-gradient(rgba(26, 26, 46, 0.9), rgba(26, 26, 46, 0.9)), url('https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .seo-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .seo-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.2);
+        }
+        
+        .terms-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+        }
+        
+        .terms-content.active {
+            max-height: 2000px;
+        }
+        
+        /* 3D Cube Container */
+        #cube-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            perspective: 1000px;
+        }
+        
+        #cube {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: rotate 20s infinite linear;
+        }
+        
+        #cube div {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: rgba(255,255,255,0.8);
+            border: 2px solid var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--dark);
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+        }
+        
+        #cube .front {
+            transform: translateZ(100px);
+            background: rgba(110, 72, 170, 0.7);
+        }
+        
+        #cube .back {
+            transform: rotateY(180deg) translateZ(100px);
+            background: rgba(157, 80, 187, 0.7);
+        }
+        
+        #cube .right {
+            transform: rotateY(90deg) translateZ(100px);
+            background: rgba(255, 154, 68, 0.7);
+        }
+        
+        #cube .left {
+            transform: rotateY(-90deg) translateZ(100px);
+            background: rgba(255, 45, 109, 0.7);
+        }
+        
+        #cube .top {
+            transform: rotateX(90deg) translateZ(100px);
+            background: rgba(0, 240, 255, 0.7);
+        }
+        
+        #cube .bottom {
+            transform: rotateX(-90deg) translateZ(100px);
+            background: rgba(179, 153, 255, 0.7);
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 5px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--secondary);
+        }
+        
+        /* Floating Particles */
+        @keyframes float-particle {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-1000px) rotate(720deg);
+                opacity: 0;
+            }
+        }
+        
+        /* Hero Section Glitch Effect */
+        .glitch {
+            position: relative;
+        }
+        
+        .glitch::before, .glitch::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+        }
+        
+        .glitch::before {
+            left: 2px;
+            text-shadow: -2px 0 #ff00c1;
+            clip: rect(44px, 450px, 56px, 0);
+            animation: glitch-anim 5s infinite linear alternate-reverse;
+        }
+        
+        .glitch::after {
+            left: -2px;
+            text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
+            clip: rect(44px, 450px, 56px, 0);
+            animation: glitch-anim2 5s infinite linear alternate-reverse;
+        }
+        
+        @keyframes glitch-anim {
+            0% { clip: rect(31px, 9999px, 94px, 0); }
+            10% { clip: rect(112px, 9999px, 76px, 0); }
+            20% { clip: rect(85px, 9999px, 77px, 0); }
+            30% { clip: rect(27px, 9999px, 97px, 0); }
+            40% { clip: rect(64px, 9999px, 98px, 0); }
+            50% { clip: rect(61px, 9999px, 85px, 0); }
+            60% { clip: rect(99px, 9999px, 114px, 0); }
+            70% { clip: rect(34px, 9999px, 115px, 0); }
+            80% { clip: rect(98px, 9999px, 129px, 0); }
+            90% { clip: rect(43px, 9999px, 96px, 0); }
+            100% { clip: rect(82px, 9999px, 64px, 0); }
+        }
+        
+        @keyframes glitch-anim2 {
+            0% { clip: rect(65px, 9999px, 119px, 0); }
+            10% { clip: rect(79px, 9999px, 66px, 0); }
+            20% { clip: rect(75px, 9999px, 107px, 0); }
+            30% { clip: rect(58px, 9999px, 103px, 0); }
+            40% { clip: rect(78px, 9999px, 115px, 0); }
+            50% { clip: rect(64px, 9999px, 44px, 0); }
+            60% { clip: rect(33px, 9999px, 106px, 0); }
+            70% { clip: rect(39px, 9999px, 127px, 0); }
+            80% { clip: rect(109px, 9999px, 82px, 0); }
+            90% { clip: rect(100px, 9999px, 125px, 0); }
+            100% { clip: rect(92px, 9999px, 100px, 0); }
+        }
+        
+        /* Neon Button Effect */
+        .neon-btn {
+            position: relative;
+            display: inline-block;
+            padding: 12px 30px;
+            margin: 10px 0;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            overflow: hidden;
+            transition: 0.5s;
+            border-radius: 50px;
+        }
+        
+        .neon-btn-pink {
+            background: var(--anime-pink);
+            box-shadow: 0 0 5px var(--anime-pink),
+                        0 0 25px var(--anime-pink),
+                        0 0 50px var(--anime-pink),
+                        0 0 100px var(--anime-pink);
+        }
+        
+        .neon-btn-blue {
+            background: var(--anime-blue);
+            box-shadow: 0 0 5px var(--anime-blue),
+                        0 0 25px var(--anime-blue),
+                        0 0 50px var(--anime-blue),
+                        0 0 100px var(--anime-blue);
+        }
+        
+        .neon-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px var(--anime-pink),
+                        0 0 40px var(--anime-pink),
+                        0 0 80px var(--anime-pink);
+        }
+        
+        .neon-btn span {
+            position: absolute;
+            display: block;
+        }
+        
+        .neon-btn span:nth-child(1) {
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--anime-pink));
+            animation: btn-anim1 2s linear infinite;
+        }
+        
+        @keyframes btn-anim1 {
+            0% { left: -100%; }
+            50%,100% { left: 100%; }
+        }
+        
+        .neon-btn span:nth-child(2) {
+            top: -100%;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg, transparent, var(--anime-pink));
+            animation: btn-anim2 2s linear infinite;
+            animation-delay: 0.5s;
+        }
+        
+        @keyframes btn-anim2 {
+            0% { top: -100%; }
+            50%,100% { top: 100%; }
+        }
+        
+        .neon-btn span:nth-child(3) {
+            bottom: 0;
+            right: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(270deg, transparent, var(--anime-pink));
+            animation: btn-anim3 2s linear infinite;
+            animation-delay: 1s;
+        }
+        
+        @keyframes btn-anim3 {
+            0% { right: -100%; }
+            50%,100% { right: 100%; }
+        }
+        
+        .neon-btn span:nth-child(4) {
+            bottom: -100%;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(360deg, transparent, var(--anime-pink));
+            animation: btn-anim4 2s linear infinite;
+            animation-delay: 1.5s;
+        }
+        
+        @keyframes btn-anim4 {
+            0% { bottom: -100%; }
+            50%,100% { bottom: 100%; }
+        }
+        
+        /* Floating Islands Effect */
+        .floating-island {
+            animation: float 6s ease-in-out infinite;
+            filter: drop-shadow(0 20px 10px rgba(0,0,0,0.2));
+        }
+        
+        .floating-island:nth-child(2) {
+            animation-delay: 1s;
+        }
+        
+        .floating-island:nth-child(3) {
+            animation-delay: 2s;
+        }
+        
+        /* 3D Card Effect */
+        .card-3d {
+            transform-style: preserve-3d;
+            transition: all 0.5s ease;
+        }
+        
+        .card-3d:hover {
+            transform: rotateY(10deg) rotateX(10deg) translateY(-10px);
+        }
+        
+        /* Cyberpunk Grid Background */
+        .cyber-grid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            z-index: -1;
+        }
+        
+        /* Anime Speech Bubble */
+        .speech-bubble {
+            position: relative;
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .speech-bubble::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50px;
+            width: 0;
+            height: 0;
+            border: 20px solid transparent;
+            border-top-color: white;
+            border-bottom: 0;
+            border-left: 0;
+            margin-left: -10px;
+            margin-bottom: -20px;
+        }
+        
+        /* Digital Rain Effect */
+        .digital-rain {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: black;
+            z-index: -1;
+            opacity: 0.1;
+        }
+        
+        /* Holographic Effect */
+        .holographic {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .holographic::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                to bottom right,
+                rgba(255,255,255,0) 45%,
+                rgba(255,255,255,0.1) 50%,
+                rgba(255,255,255,0) 55%
+            );
+            transform: rotate(30deg);
+            animation: holographic 3s linear infinite;
+        }
+        
+        @keyframes holographic {
+            0% { transform: translateY(-100%) rotate(30deg); }
+            100% { transform: translateY(100%) rotate(30deg); }
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .glitch::before, .glitch::after {
+                animation: none;
+                display: none;
+            }
+            
+            .neon-btn {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+            
+            .anime-character::after {
+                display: none;
+            }
+            
+            #cube-container {
+                width: 150px;
+                height: 150px;
+            }
+            
+            #cube div {
+                width: 150px;
+                height: 150px;
+                font-size: 18px;
+            }
+            
+            #cube .front {
+                transform: translateZ(75px);
+            }
+            
+            #cube .back {
+                transform: rotateY(180deg) translateZ(75px);
+            }
+            
+            #cube .right {
+                transform: rotateY(90deg) translateZ(75px);
+            }
+            
+            #cube .left {
+                transform: rotateY(-90deg) translateZ(75px);
+            }
+            
+            #cube .top {
+                transform: rotateX(90deg) translateZ(75px);
+            }
+            
+            #cube .bottom {
+                transform: rotateX(-90deg) translateZ(75px);
+            }
+        }
+        
+        /* --- Improved Offer Section Styles --- */
+        #offer {
+            background: linear-gradient(120deg, var(--primary) 0%, var(--accent) 100%);
+            color: #fff;
+        }
+        #offer .offer-badge {
+            background: #fff;
+            color: var(--primary);
+            box-shadow: 0 2px 12px 0 rgba(110, 72, 170, 0.10);
+        }
+        #offer h2, #offer h3, #offer h4 {
+            color: #fff;
+            text-shadow: 0 2px 8px rgba(110, 72, 170, 0.10);
+        }
+        #offer .bg-accent, #offer .bg-accent.bg-opacity-80 {
+            background: linear-gradient(90deg, var(--accent), var(--anime-pink));
+            color: #fff;
+        }
+        #offer .bg-white.bg-opacity-10, #offer .bg-white.bg-opacity-20 {
+            background: rgba(255,255,255,0.12) !important;
+            border: 1.5px solid rgba(255,255,255,0.18);
+            box-shadow: 0 4px 24px 0 rgba(110, 72, 170, 0.10);
+        }
+        #offer .bg-green-500.bg-opacity-20 {
+            background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%) !important;
+            color: #1a1a2e;
+        }
+        #offer .bg-blue-500.bg-opacity-20 {
+            background: linear-gradient(90deg, #396afc 0%, #2948ff 100%) !important;
+            color: #fff;
+        }
+        #offer .border-green-400 {
+            border-color: #43e97b !important;
+        }
+        #offer .border-blue-400 {
+            border-color: #396afc !important;
+        }
+        #offer .shadow-lg, #offer .shadow-xl, #offer .shadow-md {
+            box-shadow: 0 8px 32px 0 rgba(110, 72, 170, 0.15), 0 1.5px 6px 0 rgba(0,0,0,0.08);
+        }
+        #offer .text-gray-200, #offer .text-gray-100 {
+            color: #e0e6ed !important;
+        }
+        #offer .text-accent {
+            color: var(--accent) !important;
+        }
+        #offer .neon-btn.neon-btn-pink {
+            background: linear-gradient(90deg, var(--anime-pink), var(--accent));
+            color: #fff;
+            box-shadow: 0 0 16px 2px var(--anime-pink), 0 0 32px 8px var(--accent);
+        }
+        #offer .neon-btn.neon-btn-pink:hover {
+            background: linear-gradient(90deg, var(--accent), var(--anime-pink));
+            box-shadow: 0 0 32px 8px var(--anime-pink), 0 0 16px 2px var(--accent);
+            color: #fff;
+        }
+        #offer .fa-star, #offer .fa-star-half-alt {
+            color: #ffd700 !important;
+            text-shadow: 0 2px 8px rgba(255, 215, 0, 0.15);
+        }
+        #offer .fa-trophy {
+            color: #ffd700 !important;
+        }
+        #offer .fa-money-bill-wave {
+            color: #43e97b !important;
+        }
+        #offer .fa-rocket {
+            color: #38f9d7 !important;
+        }
+        #offer .fa-question-circle {
+            color: #ff2d6d !important;
+        }
+        #offer .fa-rupee-sign {
+            color: #ff9a44 !important;
+        }
+        #offer .fa-bolt {
+            color: #ff9a44 !important;
+        }
+        #offer .fa-headset {
+            color: #b399ff !important;
+        }
+        #offer .fa-lock {
+            color: #6e48aa !important;
+        }
+        #offer .fa-search {
+            color: #00f0ff !important;
+        }
+        #offer .fa-images {
+            color: #b399ff !important;
+        }
+        #offer .fa-mobile-alt {
+            color: #00f0ff !important;
+        }
+        #offer .fa-phone-volume {
+            color: #ff2d6d !important;
+        }
+        #offer .fa-file-signature {
+            color: #9d50bb !important;
+        }
+        #offer .fa-arrow-right {
+            color: #fff !important;
+        }
+        #offer .rounded-xl, #offer .rounded-full {
+            border-radius: 1.25rem !important;
+        }
+        #offer .font-bold, #offer .font-semibold {
+            letter-spacing: 0.01em;
+        }
+        #offer .p-6, #offer .p-8, #offer .py-4, #offer .py-2, #offer .px-6, #offer .px-10 {
+            box-sizing: border-box;
+        }
+        @media (max-width: 768px) {
+            #offer h2, #offer h3, #offer h4 {
+                text-shadow: none;
+            }
+        }
+        /* --- 100% Paisa Vasool Guarantee Card --- */
+        #offer .paisa-vasool-card {
+            background: rgba(255,255,255,0.97);
+            border: 2.5px solid #43e97b;
+            box-shadow: 0 6px 32px 0 rgba(67, 233, 123, 0.10), 0 1.5px 6px 0 rgba(0,0,0,0.08);
+            border-radius: 1.5rem;
+            color: #1a1a2e;
+            padding: 2.5rem 1.5rem;
+            margin-bottom: 2.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+        #offer .paisa-vasool-card .icon {
+            background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+            color: #fff;
+            border-radius: 50%;
+            width: 64px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 12px 0 rgba(67, 233, 123, 0.15);
+        }
+        #offer .paisa-vasool-card .badge {
+            display: inline-block;
+            background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+            color: #fff;
+            font-weight: bold;
+            border-radius: 999px;
+            padding: 0.25rem 1.25rem;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            letter-spacing: 0.04em;
+            box-shadow: 0 2px 8px 0 rgba(67, 233, 123, 0.10);
+        }
+        #offer .paisa-vasool-card h4 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #1a1a2e;
+        }
+        #offer .paisa-vasool-card p {
+            color: #222;
+            font-size: 1.1rem;
+        }
+        #offer .paisa-vasool-card .font-bold {
+            color: #43e97b;
+        }
+        /* --- Enhanced Neon Pink Button --- */
+        .neon-btn.neon-btn-pink {
+            background: linear-gradient(90deg, var(--anime-pink) 0%, var(--accent) 100%);
+            color: #fff;
+            border: 2px solid var(--anime-pink);
+            box-shadow: 0 0 16px 2px var(--anime-pink), 0 4px 24px 0 rgba(255, 45, 109, 0.18), 0 2px 8px 0 rgba(255, 154, 68, 0.10);
+            text-shadow: 0 2px 8px rgba(255, 45, 109, 0.10);
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            border-radius: 999px;
+            transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        .neon-btn.neon-btn-pink:before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            border-radius: 999px;
+            background: linear-gradient(120deg, var(--anime-pink) 0%, var(--accent) 100%);
+            opacity: 0.18;
+            z-index: 0;
+            pointer-events: none;
+        }
+        .neon-btn.neon-btn-pink:hover, .neon-btn.neon-btn-pink:focus {
+            background: linear-gradient(90deg, var(--accent) 0%, var(--anime-pink) 100%);
+            color: #fff;
+            box-shadow: 0 0 32px 8px var(--anime-pink), 0 8px 32px 0 rgba(255, 45, 109, 0.22), 0 2px 8px 0 rgba(255, 154, 68, 0.15);
+            transform: translateY(-2px) scale(1.045);
+            border-color: var(--accent);
+        }
+        .neon-btn.neon-btn-pink:active {
+            transform: scale(0.98);
+            box-shadow: 0 0 8px 2px var(--anime-pink), 0 2px 8px 0 rgba(255, 45, 109, 0.10);
+        }
+        .neon-btn.neon-btn-pink i, .neon-btn.neon-btn-pink svg {
+            color: #fff !important;
+        }
+        /* --- Enhanced Neon Blue Button --- */
+        .neon-btn.neon-btn-blue {
+            background: linear-gradient(90deg, var(--anime-blue) 0%, var(--anime-purple) 100%);
+            color: #fff;
+            border: 2px solid var(--anime-blue);
+            box-shadow: 0 0 16px 2px var(--anime-blue), 0 4px 24px 0 rgba(0, 240, 255, 0.18), 0 2px 8px 0 rgba(179, 153, 255, 0.10);
+            text-shadow: 0 2px 8px rgba(0, 240, 255, 0.10);
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            border-radius: 999px;
+            transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        .neon-btn.neon-btn-blue:before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            border-radius: 999px;
+            background: linear-gradient(120deg, var(--anime-blue) 0%, var(--anime-purple) 100%);
+            opacity: 0.18;
+            z-index: 0;
+            pointer-events: none;
+        }
+        .neon-btn.neon-btn-blue:hover, .neon-btn.neon-btn-blue:focus {
+            background: linear-gradient(90deg, var(--anime-purple) 0%, var(--anime-blue) 100%);
+            color: #fff;
+            box-shadow: 0 0 32px 8px var(--anime-blue), 0 8px 32px 0 rgba(0, 240, 255, 0.22), 0 2px 8px 0 rgba(179, 153, 255, 0.15);
+            transform: translateY(-2px) scale(1.045);
+            border-color: var(--anime-purple);
+        }
+        .neon-btn.neon-btn-blue:active {
+            transform: scale(0.98);
+            box-shadow: 0 0 8px 2px var(--anime-blue), 0 2px 8px 0 rgba(0, 240, 255, 0.10);
+        }
+        .neon-btn.neon-btn-blue i, .neon-btn.neon-btn-blue svg {
+            color: #fff !important;
+        }
+    </style>
+</head>
+<body class="bg-light text-dark font-poppins">
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+    
+    <!-- Floating Particles -->
+    <div id="particles-js"></div>
+    
+    <!-- Digital Rain Effect -->
+    <canvas id="digitalRain" class="digital-rain"></canvas>
+    
+    <!-- Cyber Grid Background -->
+    <div class="cyber-grid"></div>
+    
+    <!-- Header/Navigation -->
+    <header class="gradient-bg text-white shadow-lg sticky top-0 z-50" data-aos="fade-down">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="relative">
+                    <i class="fas fa-code text-2xl text-accent"></i>
+                    <div class="absolute -top-1 -right-1 w-2 h-2 bg-animePink rounded-full animate-ping"></div>
+                </div>
+                <h1 class="text-2xl font-bold">Mayank Webichi</h1>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link hover:text-accent transition">Home</a>
+                <a href="#about" class="nav-link hover:text-accent transition">About</a>
+                <a href="#services" class="nav-link hover:text-accent transition">Services</a>
+                <a href="#portfolio" class="nav-link hover:text-accent transition">Portfolio</a>
+                <a href="#offer" class="nav-link hover:text-accent transition">Special Offer</a>
+                <a href="#seo" class="nav-link hover:text-accent transition">SEO</a>
+                <a href="#contact" class="nav-link hover:text-accent transition">Contact</a>
+            </nav>
+            <button class="md:hidden text-2xl focus:outline-none" id="menuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu md:hidden fixed inset-0 bg-gray-900 bg-opacity-90 z-40 overflow-y-auto" id="mobileMenu">
+        <div class="container mx-auto px-4 py-20 flex flex-col space-y-8 items-center">
+            <button class="absolute top-6 right-6 text-2xl text-white focus:outline-none" id="closeMenuBtn">
+                <i class="fas fa-times"></i>
+            </button>
+            <a href="#home" class="text-white text-xl font-medium hover:text-accent transition">Home</a>
+            <a href="#about" class="text-white text-xl font-medium hover:text-accent transition">About</a>
+            <a href="#services" class="text-white text-xl font-medium hover:text-accent transition">Services</a>
+            <a href="#portfolio" class="text-white text-xl font-medium hover:text-accent transition">Portfolio</a>
+            <a href="#offer" class="text-white text-xl font-medium hover:text-accent transition">Special Offer</a>
+            <a href="#seo" class="text-white text-xl font-medium hover:text-accent transition">SEO</a>
+            <a href="#contact" class="text-white text-xl font-medium hover:text-accent transition">Contact</a>
+            <div class="mt-8 flex space-x-6">
+                <a href="https://wa.me/919772652151?text=WEB" class="text-white text-2xl hover:text-accent transition">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="tel:9772652151" class="text-white text-2xl hover:text-accent transition">
+                    <i class="fas fa-phone-alt"></i>
+                </a>
+                <a href="mailto:contact@mayankwebich.xyz" class="text-white text-2xl hover:text-accent transition">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white py-20 md:py-32 relative overflow-hidden min-h-screen flex items-center">
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute inset-0 bg-gradient-to-r from-black to-transparent"></div>
+            <div class="absolute inset-0 bg-grid"></div>
+        </div>
+        
+        <!-- Floating Islands -->
+       
+        <div class="absolute bottom-10 right-10 w-40 h-40 floating-island">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="PC Workspace Illustration" class="w-full h-full object-contain">
+        </div>
+        
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center relative z-10">
+            <div class="md:w-1/2 mb-12 md:mb-0" data-aos="fade-right">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
+                    <span >UP Ka Local</span><br>
+                    <span class="anime-gradient-text">Web Developer</span>
+                </h1>
+                <p class="text-xl mb-8 opacity-90">Affordable, Fast & Professional Websites for Event Management & Home Decor Businesses</p>
+                
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="#offer" class="neon-btn neon-btn-pink relative overflow-hidden">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Special Offer <i class="fas fa-gift ml-2"></i>
+                    </a>
+                    <a href="#contact" class="neon-btn neon-btn-blue relative overflow-hidden">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Contact Now <i class="fas fa-phone-alt ml-2"></i>
+                    </a>
+                </div>
+                
+                <div class="mt-8 flex items-center space-x-4">
+                    <div class="flex -space-x-2">
+                        <img src="https://randomuser.me/api/portraits/women/12.jpg" class="w-10 h-10 rounded-full border-2 border-white object-cover">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-10 h-10 rounded-full border-2 border-white object-cover">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" class="w-10 h-10 rounded-full border-2 border-white object-cover">
+                    </div>
+                    <div>
+                        <p class="text-sm opacity-80">Trusted by <span class="font-bold">50+</span> Businesses</p>
+                        <div class="flex text-yellow-300 text-sm">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="text-white ml-1">(4.8)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="md:w-1/2 flex justify-center" data-aos="fade-left">
+                <div class="relative anime-character">
+                    <div class="card-3d bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-2xl overflow-hidden shadow-2xl transform transition-all duration-500">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Web Development" class="w-full max-w-md">
+                    </div>
+                    
+                    <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg w-40" data-aos="fade-up" data-aos-delay="300">
+                        <p class="text-xs text-gray-500">Recent Project</p>
+                        <p class="font-bold text-purple-800">D Sapphire Events</p>
+                        <a href="https://www.dsapphireevent.in/" target="_blank" class="text-xs text-accent hover:underline">View Live</a>
+                    </div>
+                    
+                    <div class="absolute -top-6 -right-6 bg-accent text-white p-3 rounded-full shadow-lg" data-aos="zoom-in" data-aos-delay="500">
+                        <div class="text-center">
+                            <p class="text-2xl font-bold">₹2000</p>
+                            <p class="text-xs">Starting Price</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down text-white text-xl"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24 bg-white relative overflow-hidden">
+        <!-- Floating Particles Background -->
+        <div class="absolute inset-0 overflow-hidden z-0">
+            <div class="particle" style="top: 20%; left: 10%; width: 10px; height: 10px; background: var(--anime-pink);"></div>
+            <div class="particle" style="top: 60%; left: 80%; width: 15px; height: 15px; background: var(--anime-blue);"></div>
+            <div class="particle" style="top: 30%; left: 50%; width: 8px; height: 8px; background: var(--anime-purple);"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="inline-block bg-accent bg-opacity-10 text-accent px-4 py-1 rounded-full text-sm font-medium mb-3">About Me</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Mayank Webichi</h2>
+                <div class="w-20 h-1 bg-accent mx-auto mt-4"></div>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/3 mb-12 lg:mb-0 flex justify-center" data-aos="fade-right">
+                    <div class="relative">
+                        <div class="holographic rounded-full overflow-hidden border-8 border-white shadow-2xl">
+                            <img src="MAYANK.jpg" alt="Mayank" class="w-48 h-48 object-cover">
+                        </div>
+                        <div class="absolute -bottom-4 -right-4 bg-white p-3 rounded-full shadow-lg">
+                            <div class="bg-accent text-white p-3 rounded-full">
+                                <i class="fas fa-code text-xl"></i>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-2/3 lg:pl-12" data-aos="fade-left" data-aos-delay="200">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-800">Namaste! <span class="wave-hand">👋</span> Main Mayank</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">UP ka local web developer jo event management aur home decor businesses ko affordable rates par professional websites provide karta hai. Mera maksad UP aur Rajasthan ke chhote vyapariyon ko online presence dene ka hai. Maine 50+ event companies aur decor businesses ke liye websites banayi hain. Har website mobile-friendly, fast loading aur SEO optimized hoti hai.</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div class="bg-gray-50 p-5 rounded-xl border border-gray-100 hover:border-accent transition card-3d" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="flex items-center mb-3">
+                                <div class="bg-accent bg-opacity-10 p-2 rounded-full mr-3">
+                                    <i class="fas fa-bolt text-accent"></i>
+                                </div>
+                                <h4 class="font-bold text-gray-800">Fast Delivery</h4>
+                            </div>
+                            <p class="text-gray-600 text-sm">Website within 2 days with premium quality</p>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-5 rounded-xl border border-gray-100 hover:border-accent transition card-3d" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="flex items-center mb-3">
+                                <div class="bg-accent bg-opacity-10 p-2 rounded-full mr-3">
+                                    <i class="fas fa-rupee-sign text-accent"></i>
+                                </div>
+                                <h4 class="font-bold text-gray-800">Affordable Pricing</h4>
+                            </div>
+                            <p class="text-gray-600 text-sm">Starting at just ₹2000 one-time payment</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#portfolio" class="bg-accent hover:bg-opacity-90 text-white font-medium py-2 px-6 rounded-full text-center transition-all transform hover:scale-105 shadow-lg hover:shadow-xl" data-aos="fade-up" data-aos-delay="300">
+                            View My Work <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="https://wa.me/919772652151?text=Hi%20I%20want%20this%20offer%20of%202000" target="_blank" rel="noopener" class="neon-btn neon-btn-blue relative overflow-hidden">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Contact Now <i class="fas fa-phone-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-12 bg-gray-50 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-purple-100 to-indigo-100 opacity-50 z-0"></div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-4xl md:text-5xl font-bold text-accent mb-2" id="clientCount">57</div>
+                    <p class="text-gray-600">Happy Clients</p>
+                </div>
+                
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-4xl md:text-5xl font-bold text-accent mb-2" id="projectCount">120</div>
+                    <p class="text-gray-600">Projects Done</p>
+                </div>
+                
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-4xl md:text-5xl font-bold text-accent mb-2" id="experienceCount">4</div>
+                    <p class="text-gray-600">Years Experience</p>
+                </div>
+                
+                <div data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-4xl md:text-5xl font-bold text-accent mb-2" id="supportCount">24/7</div>
+                    <p class="text-gray-600">Client Support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-24 bg-white relative overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="inline-block bg-accent bg-opacity-10 text-accent px-4 py-1 rounded-full text-sm font-medium mb-3">My Services</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">What I Offer</h2>
+                <div class="w-20 h-1 bg-accent mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card h-64" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card-inner relative w-full h-full">
+                        <div class="service-card-front bg-white p-6 rounded-xl shadow-lg h-full flex flex-col">
+                            <div class="text-accent text-4xl mb-4">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3 text-gray-800">Event Management Website</h3>
+                            <p class="text-gray-600 mb-4 flex-grow">Professional website for your event business with gallery, services and booking form.</p>
+                            <div class="text-accent font-medium">
+                                Starting at ₹2500
+                            </div>
+                        </div>
+                        <div class="service-card-back bg-gradient-to-br from-purple-600 to-purple-800 text-white p-6 rounded-xl shadow-lg h-full flex flex-col justify-center">
+                            <h3 class="text-xl font-bold mb-3">Features Included</h3>
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex items-center"><i class="fas fa-check-circle mr-2 text-accent"></i> Event gallery showcase</li>
+                                <li class="flex items-center"><i class="fas fa-check-circle mr-2 text-accent"></i> Service packages display</li>
+                                <li class="fas fa-check-circle mr-2 text-accent"></i> Booking/contact form</li>
+                                <li class="flex items-center"><i class="fas fa-check-circle mr-2 text-accent"></i> Social media integration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card h-64" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card-inner relative w-full h-full">
+                        <div class="service-card-front bg-white p-6 rounded-xl shadow-lg h-full flex flex-col">
+                            <div class="text-accent text-4xl mb-4">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3 text-gray-800">Home Decor Website</h3>
+                            <p class="text-gray-600 mb-4 flex-grow">Showcase your decor projects with a beautiful portfolio website.</p>
+                            <div class="text-accent font-medium">
+                                Starting at ₹3000
+                            </div>
+                        </div>
+                        <div class="service-card-back bg-gradient-to-br from-purple-600 to-purple-800 text-white p-6 rounded-xl shadow-lg h-full flex flex-col justify-center">
+                            <h3 class="text-xl font-bold mb-3">Features Included</h3>
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex items-center"><i class="fas fa-check-circle mr-2 text-accent"></i> Project gallery</li>
+                                <li class="flex items-center"><i class="fas fa-check-circle mr-2 text-accent"></i> Before/after slider</li>
+                                <li class="flex items-center"><i class="fas fa-check-circle mr-2 text-accent"></i> Client testimonials</li>
+                                <li class="flex items-center"><i class="fas fa-check-circle mr-2 text-accent"></i> Service areas map</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card h-64" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card-inner relative w-full h-full">
+                        <div class="service-card-front bg-white p-6 rounded-xl shadow-lg h-full flex flex-col">
+                            <div class="text-accent text-4xl mb-4">
+                                <i class="fas fa-store"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3 text-gray-800">E-commerce Website</h3>
+                            <p class="text-gray-600 mb-4 flex-grow">Start selling decor items online with a simple e-commerce website.</p>
+                            <div class="text-accent font-medium">
+                                Starting at ₹5000
+                            </div>
+                        </div>
+                        <div class="service-card-back bg-gradient-to-br from-purple-600 to-purple-800 text-white p-6 rounded-xl shadow-lg h-full flex flex-col justify-center">
+                            <h3 class="text-xl font-bold mb-3">Features Included</h3>
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex items-center"><i class="fas fa-check-circle mr-2 text-accent"></i> Product catalog</li>
+                                <li class="flex items-center"><i class="fas fa-check-circle mr-2 text-accent"></i> Shopping cart</li>
+                                <li class="flex items-center"><i class="fas fa-check-circle mr-2 text-accent"></i> Payment integration</li>
+                                <li class="flex items-center"><i class="fas fa-check-circle mr-2 text-accent"></i> Order management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-16 md:py-24 bg-gray-50 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-purple-50 to-blue-50 opacity-50 z-0"></div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="inline-block bg-accent bg-opacity-10 text-accent px-4 py-1 rounded-full text-sm font-medium mb-3">My Work</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Recent Projects</h2>
+                <div class="w-20 h-1 bg-accent mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-item bg-white rounded-xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative group h-64 overflow-hidden">
+                        <img src="dsapphire.png" alt="D Sapphire Events" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6 z-10">
+                            <div>
+                                <a href="https://www.dsapphireevent.in/" target="_blank" class="inline-block bg-accent hover:bg-opacity-90 text-white font-medium py-2 px-4 rounded-full transition">
+                                    View Project <i class="fas fa-external-link-alt ml-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">D Sapphire Events</h3>
+                        <p class="text-gray-600 mb-4">Wedding and event management company based in Jaipur, Rajasthan.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">HTML/CSS</span>
+                            <span class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">JavaScript</span>
+                            <span class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-item bg-white rounded-xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative group h-64 overflow-hidden">
+                        <img src="GFORCEpng.png" alt="GForce Wedding Events" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6 z-10">
+                            <div>
+                                <a href="https://www.gforceweddingplanner.com/" target="_blank" class="inline-block bg-accent hover:bg-opacity-90 text-white font-medium py-2 px-4 rounded-full transition">
+                                    View Project <i class="fas fa-external-link-alt ml-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">GForce Wedding Events</h3>
+                        <p class="text-gray-600 mb-4">Premium wedding planning and decoration services in Uttar Pradesh.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">Gallery</span>
+                            <span class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">Contact Form</span>
+                            <span class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">Mobile-first</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-item bg-white rounded-xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <div class="relative group h-64 overflow-hidden">
+                        <img src="GOYAL.png" alt="Goyal Creation" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6 z-10">
+                            <div>
+                                <a href="https://www.goyalcrevent.in/" target="_blank" class="inline-block bg-accent hover:bg-opacity-90 text-white font-medium py-2 px-4 rounded-full transition">
+                                    View Project <i class="fas fa-external-link-alt ml-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Goyal Creation</h3>
+                        <p class="text-gray-600 mb-4">Interior design and home decor services in Rajasthan.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">Portfolio</span>
+                            <span class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">Service Areas</span>
+                            <span class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">SEO</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 4 -->
+                <div class="portfolio-item bg-white rounded-xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="400">
+                    <div class="relative group h-64 overflow-hidden">
+                        <img src="RAW LEAVES.png" alt="Raw Leaves Photography" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6 z-10">
+                            <div>
+                                <a href="https://www.rawleavesphotography.in/index.html" target="_blank" class="inline-block bg-accent hover:bg-opacity-90 text-white font-medium py-2 px-4 rounded-full transition">
+                                    View Project <i class="fas fa-external-link-alt ml-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Raw Leaves Photography</h3>
+                        <p class="text-gray-600 mb-4">Professional photography services for weddings and events.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">Gallery</span>
+                            <span class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">Booking System</span>
+                            <span class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 5 -->
+                <div class="portfolio-item bg-white rounded-xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="500">
+                    <div class="relative group h-64 overflow-hidden">
+                        <img src="ROCKSTAR.png" alt="Rockstar Amplify" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6 z-10">
+                            <div>
+                                <a href="https://www.rockstaramplifyevents.com/" target="_blank" class="inline-block bg-accent hover:bg-opacity-90 text-white font-medium py-2 px-4 rounded-full transition">
+                                    View Project <i class="fas fa-external-link-alt ml-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Rockstar Amplify</h3>
+                        <p class="text-gray-600 mb-4">Event management and artist booking platform.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">Artist Profiles</span>
+                            <span class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">Booking System</span>
+                            <span class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">E-commerce</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 6 -->
+                <div class="portfolio-item bg-white rounded-xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="600">
+                    <div class="relative group h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1556742044-3c52d6e88c62?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Events by Mayank" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6 z-10">
+                            <div>
+                                <a href="https://eventsbymayank.com" target="_blank" class="inline-block bg-accent hover:bg-opacity-90 text-white font-medium py-2 px-4 rounded-full transition">
+                                    View Project <i class="fas fa-external-link-alt ml-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Events by Mayank</h3>
+                        <p class="text-gray-600 mb-4">Comprehensive event management services website.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">Service Packages</span>
+                            <span class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">Testimonials</span>
+                            <span class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">SEO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12" data-aos="fade-up">
+                <a href="https://mayankwebich.xyz" target="_blank" class="inline-block bg-accent hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
+                    View More Projects <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offer Section -->
+    <section id="offer" class="py-16 md:py-24 anime-gradient-bg text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0 bg-grid-white"></div>
+        </div>
+        <!-- Floating Web Dev Illustrations -->
+       
+        <div class="absolute bottom-10 right-10 w-40 h-40 floating-island">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="PC Workspace Illustration" class="w-full h-full object-contain">
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <!-- Urgency Bar -->
+            <div class="w-full bg-accent bg-opacity-80 rounded-full py-2 px-6 flex items-center justify-center mb-8 animate-pulse">
+                <i class="fas fa-bolt mr-2"></i>
+                <span class="font-bold uppercase tracking-wider">Limited Time Only! Grab Your Web Presence Now</span>
+            </div>
+            <!-- Offer Title -->
+            <div class="text-center mb-8" data-aos="zoom-in">
+                <span class="offer-badge inline-block bg-white text-purple-900 font-bold py-2 px-6 rounded-full">
+                    <i class="fas fa-star mr-2"></i> SPECIAL WEB DESIGN OFFER
+                </span>
+            </div>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8" data-aos="fade-up">
+                🚀 UP ke Interior Designers & Event Businesses – Yeh Offer Aapke Liye Hai! 🚀
+            </h2>
+            <!-- Why this offer? -->
+            <div class="max-w-3xl mx-auto mb-12">
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white bg-opacity-10 rounded-xl p-6 flex flex-col items-center text-center shadow-lg" data-aos="fade-right">
+                        <div class="text-4xl text-red-400 mb-2"><i class="fas fa-question-circle"></i></div>
+                        <h4 class="font-bold mb-2">Why this offer?</h4>
+                        <p class="text-gray-200 text-sm">Most local businesses miss out on clients because they have no website or a poor online presence.</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 rounded-xl p-6 flex flex-col items-center text-center shadow-lg" data-aos="fade-up">
+                        <div class="text-4xl text-accent mb-2"><i class="fas fa-rupee-sign"></i></div>
+                        <h4 class="font-bold mb-2">Super Affordable</h4>
+                        <p class="text-gray-200 text-sm">Get a professional, mobile-friendly website for just <span class="font-bold">₹2000</span> (one-time payment).</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 rounded-xl p-6 flex flex-col items-center text-center shadow-lg" data-aos="fade-left">
+                        <div class="text-4xl text-green-400 mb-2"><i class="fas fa-rocket"></i></div>
+                        <h4 class="font-bold mb-2">Ready in 2 Days</h4>
+                        <p class="text-gray-200 text-sm">Fast delivery – your site goes live in just 2 days, fully optimized for Google.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- What you get -->
+            <div class="max-w-5xl mx-auto mb-12">
+                <h3 class="text-2xl font-bold mb-6 text-center">What's Included?</h3>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white bg-opacity-10 rounded-xl p-6 flex flex-col items-center text-center shadow-md">
+                        <div class="text-3xl text-accent mb-2"><i class="fas fa-mobile-alt"></i></div>
+                        <h4 class="font-semibold mb-2">Mobile-First Design</h4>
+                        <p class="text-gray-200 text-sm">Looks great on phones, tablets, and desktops.</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 rounded-xl p-6 flex flex-col items-center text-center shadow-md">
+                        <div class="text-3xl text-accent mb-2"><i class="fas fa-search"></i></div>
+                        <h4 class="font-semibold mb-2">SEO Optimized</h4>
+                        <p class="text-gray-200 text-sm">Rank higher on Google and get found by more clients.</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 rounded-xl p-6 flex flex-col items-center text-center shadow-md">
+                        <div class="text-3xl text-accent mb-2"><i class="fas fa-images"></i></div>
+                        <h4 class="font-semibold mb-2">Portfolio/Gallery</h4>
+                        <p class="text-gray-200 text-sm">Showcase your best work and attract new customers.</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 rounded-xl p-6 flex flex-col items-center text-center shadow-md">
+                        <div class="text-3xl text-accent mb-2"><i class="fas fa-bolt"></i></div>
+                        <h4 class="font-semibold mb-2">Lightning Fast</h4>
+                        <p class="text-gray-200 text-sm">Super-fast loading for a smooth user experience.</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 rounded-xl p-6 flex flex-col items-center text-center shadow-md">
+                        <div class="text-3xl text-accent mb-2"><i class="fas fa-headset"></i></div>
+                        <h4 class="font-semibold mb-2">Personal Support</h4>
+                        <p class="text-gray-200 text-sm">Direct WhatsApp support for all your queries.</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 rounded-xl p-6 flex flex-col items-center text-center shadow-md">
+                        <div class="text-3xl text-accent mb-2"><i class="fas fa-lock"></i></div>
+                        <h4 class="font-semibold mb-2">Secure & Reliable</h4>
+                        <p class="text-gray-200 text-sm">SSL, backups, and safe hosting included.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 100% Paisa Vasool Guarantee -->
+            <div class="max-w-3xl mx-auto mb-8">
+                <div class="paisa-vasool-card flex flex-col items-center text-center">
+                    <span class="badge">100% Paisa Vasool</span>
+                    <div class="icon"><i class="fas fa-money-bill-wave"></i></div>
+                    <h4>100% Paisa Vasool Guarantee</h4>
+                    <p>Aapke paise bilkul safe hain! Agar aapko website pasand nahi aaye, toh <span class='font-bold'>no questions asked, full refund</span>. Risk-free, trust ke saath!</p>
+                </div>
+            </div>
+            <!-- Best Website Guarantee -->
+            <div class="max-w-3xl mx-auto mb-12">
+                <div class="bg-blue-500 bg-opacity-20 border-2 border-blue-400 rounded-xl p-6 flex flex-col items-center text-center shadow-lg">
+                    <div class="text-4xl text-blue-500 mb-2"><i class="fas fa-trophy"></i></div>
+                    <h4 class="font-bold text-2xl mb-2">Best Website Guarantee</h4>
+                    <p class="text-gray-100 text-base">Har website <span class='font-bold'>unique, modern aur business ke hisaab se custom</span> banayi jaati hai. Aapko milegi best quality, best design, best results – warna paise wapas!</p>
+                </div>
+            </div>
+            <!-- How it works -->
+            <div class="max-w-4xl mx-auto mb-12">
+                <h3 class="text-2xl font-bold mb-6 text-center">How It Works</h3>
+                <div class="flex flex-col md:flex-row md:space-x-8 space-y-8 md:space-y-0 justify-center">
+                    <div class="flex-1 bg-white bg-opacity-10 rounded-xl p-6 flex flex-col items-center text-center shadow-md">
+                        <div class="text-3xl text-accent mb-2"><i class="fas fa-phone-volume"></i></div>
+                        <h4 class="font-semibold mb-2">Step 1: Contact</h4>
+                        <p class="text-gray-200 text-sm">WhatsApp or call to discuss your needs and vision.</p>
+                    </div>
+                    <div class="flex-1 bg-white bg-opacity-10 rounded-xl p-6 flex flex-col items-center text-center shadow-md">
+                        <div class="text-3xl text-accent mb-2"><i class="fas fa-file-signature"></i></div>
+                        <h4 class="font-semibold mb-2">Step 2: 10% Advance</h4>
+                        <p class="text-gray-200 text-sm">Pay just 10% to start. The rest after your site is ready.</p>
+                    </div>
+                    <div class="flex-1 bg-white bg-opacity-10 rounded-xl p-6 flex flex-col items-center text-center shadow-md">
+                        <div class="text-3xl text-accent mb-2"><i class="fas fa-rocket"></i></div>
+                        <h4 class="font-semibold mb-2">Step 3: Go Live!</h4>
+                        <p class="text-gray-200 text-sm">Get your website in 2 days, review, and launch!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial/Trust Badge -->
+            <div class="max-w-2xl mx-auto mb-12">
+                <div class="bg-white bg-opacity-20 rounded-xl p-8 flex flex-col items-center text-center shadow-xl">
+                    <div class="text-3xl text-yellow-300 mb-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                    <p class="italic text-lg font-medium mb-2">"Mayank delivered my website in just 2 days and it looks amazing! My business is now getting more calls from Google. Highly recommended!"</p>
+                    <div class="flex items-center space-x-3 mt-2">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-10 h-10 rounded-full border-2 border-white object-cover" alt="Client Photo">
+                        <span class="font-bold text-white">Amit Sharma</span>
+                        <span class="text-xs text-gray-200">Event Manager, UP</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Call to Action -->
+            <div class="text-center">
+                <a href="https://wa.me/919772652151?text=Hi%20I%20want%20this%20offer%20of%202000" target="_blank" rel="noopener" class="inline-block neon-btn neon-btn-pink font-bold text-lg py-4 px-10 rounded-full shadow-xl hover:scale-105 transition-transform">
+                    Claim This Offer Now <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+                <p class="mt-4 text-sm text-gray-200">Offer valid for a limited time. Don't miss out!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (optional, add if needed) -->
+    <footer class="py-8 bg-dark text-white text-center mt-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-lg font-bold">Mayank Webichi</p>
+                    <p class="text-sm">Premium Web Developer for Event & Decor Businesses</p>
+                </div>
+                <div class="flex space-x-6 mb-4 md:mb-0">
+                    <a href="https://wa.me/919772652151?text=WEB" class="hover:text-accent transition" title="WhatsApp"><i class="fab fa-whatsapp text-2xl"></i></a>
+                    <a href="tel:9772652151" class="hover:text-accent transition" title="Call"><i class="fas fa-phone-alt text-2xl"></i></a>
+                    <a href="mailto:contact@mayankwebich.xyz" class="hover:text-accent transition" title="Email"><i class="fas fa-envelope text-2xl"></i></a>
+                </div>
+                <div>
+                    <p class="text-xs">&copy; 2025 Mayank Webichi. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts (AOS, etc.) -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        // Counter animation for stats section
+        function animateCounter(id, end, duration) {
+            const el = document.getElementById(id);
+            if (!el) return;
+            let start = 0;
+            const range = end - start;
+            let startTime = null;
+            function step(timestamp) {
+                if (!startTime) startTime = timestamp;
+                const progress = Math.min((timestamp - startTime) / duration, 1);
+                el.textContent = Math.floor(progress * range + start);
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                } else {
+                    el.textContent = end;
+                }
+            }
+            window.requestAnimationFrame(step);
+        }
+
+        // Trigger animation when stats section is in view
+        let statsAnimated = false;
+        function handleScroll() {
+            const statsSection = document.querySelector('.bg-gray-50.relative');
+            if (!statsSection) return;
+            const rect = statsSection.getBoundingClientRect();
+            if (!statsAnimated && rect.top < window.innerHeight && rect.bottom > 0) {
+                animateCounter('clientCount', 57, 1200);
+                animateCounter('projectCount', 120, 1200);
+                animateCounter('experienceCount', 4, 1200);
+                statsAnimated = true;
+            }
+        }
+        window.addEventListener('scroll', handleScroll);
+        // Also trigger on load in case already in view
+        window.addEventListener('DOMContentLoaded', handleScroll);
+
+        // --- Mobile Drawer Menu JS ---
+        document.addEventListener('DOMContentLoaded', function() {
+            var menuBtn = document.getElementById('menuBtn');
+            var closeMenuBtn = document.getElementById('closeMenuBtn');
+            var mobileMenu = document.getElementById('mobileMenu');
+            var menuLinks = mobileMenu.querySelectorAll('a');
+
+            function openMenu() {
+                mobileMenu.classList.add('open');
+                document.body.style.overflow = 'hidden';
+            }
+            function closeMenu() {
+                mobileMenu.classList.remove('open');
+                document.body.style.overflow = '';
+            }
+            if (menuBtn) menuBtn.addEventListener('click', openMenu);
+            if (closeMenuBtn) closeMenuBtn.addEventListener('click', closeMenu);
+            menuLinks.forEach(function(link) {
+                link.addEventListener('click', closeMenu);
+            });
+        });
+    </script>
+</body>
+</html>
